@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/school_mgmt_system
+    username: postgres
+    password: 1romay@2468
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
+      location: C:/Users/LENOVO/Desktop/SchoolManagementSys/Backend/uploaded_files
+server:
+  port: 2025
+#  tomcat:
+#    basedir: C:/Users/LENOVO/Desktop/SchoolManagementSys/Backend/uploads
+springdoc:
+  default-produces-media-type: application/json
+file:
+  upload-passport: passport_photos/
+  upload-birthCertificate: birth_certificate/
+  upload-reportCard: report_card/
+
